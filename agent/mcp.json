@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "maya_mcp": {
+      "command": "D:\\001M\\workspace\\ait\\maya_mcp\\target\\release\\maya_mcp.exe",
+      "description": "Execute Python/MEL in a running Maya session; query scene, selection, nodes"
+    },
+    "agent-desktop": {
+      "command": "D:\\001M\\tools\\agentt\\agent-desktop.exe",
+      "args": [
+        "mcp"
+      ],
+      "description": "Desktop automation via agent-desktop: screenshots, mouse/keyboard, windows"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "providers": {
+    "wbproxy": {
+      "name": "wbproxy",
+      "baseUrl": "http://127.0.0.1:8788/v1",
+      "apiKey": "wbproxy",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "wbm",
+          "name": "wb model",
+    		  "baseUrl": "http://127.0.0.1:8788/v1",
+          "api": "openai-completions",
+          "provider": "wbproxy",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 300000,
+          "maxTokens": 64000,
+          "compat": {
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": false,
+            "maxTokensField": "max_tokens",
+            "supportsStrictMode": false
+          },
+          "type": "chat"
+        }
+      ]
+    },
+    "wrproxy": {
+      "name": "wrproxy",
+      "baseUrl": "http://127.0.0.1:8787/v1",
+      "apiKey": "wrproxy",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "wrm",
+          "name": "wrm",
+    		 "baseUrl": "http://127.0.0.1:8787/v1",
+          "api": "openai-completions",
+          "provider": "wrproxy",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 300000,
+          "maxTokens": 64000,
+          "compat": {
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": false,
+            "maxTokensField": "max_tokens",
+            "supportsStrictMode": false
+          },
+          "type": "chat"
+        }
+      ]
+    },
+    "trproxy": {
+      "name": "trproxy",
+      "baseUrl": "http://127.0.0.1:8789/v1",
+      "apiKey": "trproxy",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "trm",
+          "name": "trm",
+          "api": "openai-completions",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 300000,
+          "maxTokens": 64000,
+          "compat": {
+            "supportsStore": false,
+            "supportsDeveloperRole": false,
+            "supportsReasoningEffort": true,
+            "supportsUsageInStreaming": true,
+            "maxTokensField": "max_tokens",
+            "thinkingFormat": "openai",
+            "supportsStrictMode": false
+          },
+          "type": "chat"
+        }
+      ]
+    }
+  }
+}

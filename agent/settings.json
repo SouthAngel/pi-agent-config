@@ -1,0 +1,29 @@
+{
+  "lastChangelogVersion": "1.5.2",
+  "defaultProvider": "trproxy",
+  "defaultModel": "trm",
+  "defaultTools": [
+    "-bash",
+    "+powershell"
+  ],
+  "hideThinkingBlock": false,
+  "enabledModels": [
+    "deepseek/deepseek-flash",
+    "deepseek/deepseek-v4-pro",
+    "wbproxy/wbm",
+    "wrproxy/wrm",
+    "trproxy/trm",
+    "nvidia/stepfun-ai/step-5-preview",
+    "nvidia/nvidia/nemotron-3.5-super-vl-120b-a12b",
+    "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b",
+    "nvidia/poolside/laguna-xs-2.1",
+    "nvidia/minimaxai/minimax-m3.1-flash"
+  ],
+  "enableSkillCommands": true,
+  "steeringMode": "one-at-a-time",
+  "defaultThinkingLevel": "medium",
+  "packages": [],
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.88.0"
+  }
+}
